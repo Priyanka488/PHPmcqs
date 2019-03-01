@@ -1,5 +1,5 @@
 <?php
-
+//To make warnings disappear
 error_reporting(0);
 $a=$_POST["Q1"];
 $b=$_POST["Q2"];
