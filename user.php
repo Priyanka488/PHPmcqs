@@ -49,7 +49,7 @@ body, html {
 <?php
 $a  = $_GET["Name"];
 echo "Hey ".$a;
- ?><br>Here goes your quiz !
+ ?><br>Here goes your quiz !!
 
     </span></h5>
 
