@@ -1,0 +1,225 @@
+<html><head><title>PHP Assignment</title>
+
+<!-- Mirrored from www.w3schools.com/w3css/tryw3css_templates_cafe.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 27 Feb 2019 16:28:13 GMT -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head><body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">PHP ARTICLE</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">QUIZ</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">PHP<br>Assignment</span>
+  </div>
+
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
+    <p>Greetings Everyone!
+My name is Priyanka Yadav. I am in my sophomore year, pursuing Bachelors In Technology with specialization in Cloud Computing and Virtualization. I am from Lucknow, Uttar Pradesh, famed for its grace, culture, and cuisine. Having inherited its diverse and rich culture, I am a mix of jolly and gentle traits. I am a melophile and an amateur singer. I am passionate about learning, exploring and experimenting with computer science and its advancements.
+</p>
+    <p>My life derives its happiness from optimism . I love being optimistic towards everything and this is what keeps me going. According to me ,it is very important for a person to be optimistic towards his team and goals and keep moving ahead.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p>--Priyanka Yadav</p>
+      <p>--R-119</p>
+    <p>--500060668</p>
+    </div>
+
+
+
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">PHP FORMS
+</span></h5>
+
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink w3-dark-grey">#1
+</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">#2</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card" style="display: block;">
+      <h5> <u>Forms</u></h5>
+      <p >Forms are used to get input from the user and submit it to the web server for processing.
+A form is used to get input from the user and to submit it to the web server for further processing. In HTML , we have form tag that contains various graphical user interface items such as input box, check boxes radio buttons etc.
+</p><br>
+<p>The form is defined using <br>
+&lt form &gt</pre>
+ (Starting tag)<br>
+&lt /form &gt(Ending tag)<br>
+</p>
+      <h5> <u>Creating a Form</u></h5>
+      <p >We will be using HTML to create our form. The minimum info that should be present in the code is:
+<ul>
+<li> Opening and closing form tags.</li>
+<li>Form submission type POST or GET.</li>
+<li>Name of the PHP file where the data is sent for processing.</li>
+<li>Input fields such as input boxes, text areas, buttons,checkboxes etc.</li>
+<li>The PHP superglobals $_GET and $_POST are used to collect form-data.</li>
+</ul>
+
+
+</p><br>
+
+      <h5>Let’s walk down line by line and understand the code :</h5>
+      <p style="color:red;">  <b>&lt form  action="welcome.php" method="post"&gt</b></p>
+      <ul>
+      <li>&lt form &gt is the html tag to that contains various input GUI</li>
+      <li>action=”welcome.php” specifies that the input entered by the user will be sent to the file named as welcome.php</li>
+      <li>method=”post” specifies that submission is of type “post”.The form data is sent through HTTP POST method.</li>
+
+      </ul><br>
+<p>
+      <p style="color:red;"><b>Name: &lt input type="text" name="fname"&gt</b><br></p>
+      <ul>
+      <li>“Name:” is the text displayed on the screen on the input box, generally acting like a placeholder or a hint.</li>
+      <li>type=”text” , specifies that the input is of type text.</li>
+      <li>name=”fname” acts like a variable associated with the input,this variable (fname) will be used in the php script to retrieve the input name.</li>
+
+      </ul><br></p>
+      <p style="color:red;"><b>&lt input type="submit"&gt <br>
+&lt /form &gt
+</b><br></p>
+
+
+<ul>
+<li>type=”submit” indicates of a button, used to submit the input values by the user.</li>
+<li>&lt /form &gt is the closing tag of the HTML form.</li>
+
+</ul><br>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card" style="display: none;">
+      <h5><u>PHP Script</u></h5>
+      <p ><html>
+<body>
+<code>Welcome &lt ?php echo $_POST["name"]; ?&gt<br>
+Your email address is: &lt?php echo $_POST["email"]; ?&gt</code>
+
+
+</body>
+</html></p><br>
+
+<ul>
+  <li>PHP tags open and close as follows :</li>
+  <p>&lt ? php </pre>
+   (Starting tag)<br>
+ ? &gt(Ending tag)<br></p>
+<li>"echo" is a php command used to display content on screen.</li>
+<li>$_POST["fname"] - Here , $_POST is a superglobal array consiting of all the values sent through HTTP POST method.</li>
+<li>Note we use the variable associated with the attribute <b>name</b> in HTML as the key to retreive the variable.</li>
+
+</ul><br>
+      <p style="color:red;"><u> <b>HTML CODE </b></u></p>
+      <img src="images/html.png" alt="html code">
+
+<br><br><br>
+        <p style="color:red;"><u> <b>PHP SCRIPT </b></u></p>
+      <img src="images/php.png" alt="html code">
+
+    </div>
+    <img src="images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">TAKE THE QUIZ</span></h5>
+
+
+
+    <p>Test your knowledge in PHP Forms</p>
+    <form action="user.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required="" name="Name"></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p><button class="w3-button w3-black" type="submit" >Proceed</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Made by Priyanka :)</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+
+
+<!-- Mirrored from www.w3schools.com/w3css/tryw3css_templates_cafe.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 27 Feb 2019 16:28:15 GMT -->
+
+</body></html>
